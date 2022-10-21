@@ -33,7 +33,7 @@ public class CategoryController : Controller
     {
         if (obj.Name == obj.DisplayOrder.ToString())
         {
-            ModelState.AddModelError("CustomError", "The DisplayOrder cannot exactly match the Name.");
+            ModelState.AddModelError("CustomError", "The Display Order cannot exactly match the Name.");
         }
         if (ModelState.IsValid)
         {
